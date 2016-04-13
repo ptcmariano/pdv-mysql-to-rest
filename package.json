@@ -1,0 +1,17 @@
+{
+  "name": "pdv-mysql-to-rest",
+  "version": "0.0.1",
+  "description": "This module maps MYSQL DB of pdv to an REST API interface.",
+  "main": "index.js",
+  "dependencies": {
+    "mysql-to-rest": "*",
+    "mysql": "*",
+    "express": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "paulotiagocm@outlook.com"
+}
