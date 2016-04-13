@@ -7,10 +7,11 @@ var connection = mysql.createPool({
   connectionLimit : 10,
   host            : process.env.IP,
   user            : process.env.C9_USER,
-  database        : 'c9',
+  database        : 'pdv',
   password        : ''
 });
 
 var api = mysqltorest(app,connection);
 //Dont forget to start the server
-app.listen(8000);
+console.log("init, port:"+process.env.PORT+" host:"+process.env.IP);
+app.listen(process.env.PORT);
